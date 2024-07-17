@@ -46,13 +46,13 @@ export default class UpgradeAPIVersion extends SfdxCommand {
       char: "s",
       description: messages.getMessage("sourceapi"),
       min: 10,
-      max: 50,
+      max: 99,
     }),
     targetversion: flags.number({
       char: "t",
       description: messages.getMessage("targetapi"),
-      min: 30,
-      max: 51,
+      min: 50,
+      max: 100,
     }),
     fileprefix: flags.string({
       char: "x",
